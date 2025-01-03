@@ -46,7 +46,7 @@ export default function HomePage() {
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: 50 }}
-            transition={{ duration: 0.5, ease: "easeOut", delay: 0.2 }}
+            transition={{ duration: 0.5, ease: "easeOut" }}
             className="mt-8 flex items-center justify-center bg-white text-black px-3 py-3 rounded-full hover:bg-gray-300 focus:outline-none"
           >
             <svg
