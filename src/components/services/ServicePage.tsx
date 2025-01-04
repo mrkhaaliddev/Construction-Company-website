@@ -13,19 +13,19 @@ const ServiceCards = [
     Image: "/assets/services/Architectural-Modelling.avif",
     Title: "Preconstruction Planning",
     Description:
-      "I'm a paragraph. Click here to add your own text and edit me. It's easy. Just click “Edit Text” or double-click me to add your own content and make changes to the font. Personalize this space to reflect your unique ideas, vision, and style.",
+      "At Sphere Constructions, we believe a successful project starts with meticulous planning. Our preconstruction planning services focus on understanding your vision, defining project goals, and addressing potential challenges early. From feasibility studies to cost estimation and scheduling, we ensure your project begins on a solid foundation.",
   },
   {
     Image: "/assets/services/Construction-Management.avif",
     Title: "Architectural Modelling",
     Description:
-      "I'm a paragraph. Click here to add your own text and edit me. It's easy. Just click “Edit Text” or double-click me to add your own content and make changes to the font. Personalize this space to reflect your unique ideas, vision, and style.",
+      "Transform your vision into reality with our state-of-the-art architectural modeling services. Using advanced technology and precise detailing, we create models that bring clarity to complex designs, enabling seamless collaboration and ensuring every detail aligns with your expectations.",
   },
   {
     Image: "/assets/services/Preconstruction.avif",
     Title: "Construction Management",
     Description:
-      "I'm a paragraph. Click here to add your own text and edit me. It's easy. Just click “Edit Text” or double-click me to add your own content and make changes to the font. Personalize this space to reflect your unique ideas, vision, and style.",
+      "Our construction management team ensures your project is completed on time, within budget, and to the highest quality standards. From procurement and contractor coordination to on-site supervision, we handle every detail, so you can focus on your vision. Trust Sphere Constructions to deliver results that exceed expectations.",
   },
 ];
 

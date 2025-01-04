@@ -40,20 +40,24 @@ export default function AboutPage() {
               whileInView={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: 50 }}
               transition={{ duration: 0.5, ease: "easeOut" }}
-              className="md:w-[80%] text-black/80 text-lg font-thin"
+              className="md:w-[80%] text-black/80 text-lg font-thin text-clip"
             >
-              I&apos;m a paragraph. Click here to add your own text and edit me.
-              It&apos;s easy. Just click “Edit Text” or double click me to add
-              your own content and make changes to the font. Feel free to drag
-              and drop me anywhere you like on your page. I&apos;m a great place
-              for you to tell a story and let your users know a little more
-              about you This is a great space to write long text about your
-              company and your services. You can use this space to go into a
-              little more detail about your company. Talk about your team and
-              what services you provide. Tell your visitors the story of how you
-              came up with the idea for your business and what makes you
-              different from your competitors. Make your company stand out and
-              show your visitors who you are.
+              At Sphere Constructions, we are more than just builders – we are
+              creators of innovative spaces that stand the test of time. With
+              decades of combined experience in the construction industry, our
+              team is dedicated to delivering excellence in every project we
+              undertake. From residential developments to large-scale commercial
+              projects, our commitment to quality, safety, and client
+              satisfaction remains unwavering. <br /> Our journey began with a
+              vision: to redefine construction standards by combining
+              cutting-edge technology, skilled craftsmanship, and sustainable
+              practices. Over the years, we have earned the trust of our clients
+              by consistently delivering projects on time and within budget
+              while exceeding expectations.
+              <br /> At Sphere Constructions, we believe in building more than
+              just structures – we build lasting relationships. Let us bring
+              your vision to life with integrity, innovation, and unmatched
+              professionalism.
             </motion.p>
           </div>
         </Wrapper>
