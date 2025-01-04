@@ -6,13 +6,16 @@ import Image from "next/image";
 // ** third party
 import { motion } from "motion/react";
 import { Element } from "react-scroll";
+
+// ** Components
 import Wrapper from "../Wrapper";
 
 export default function AboutPage() {
   return (
     <Element name="about" className="mt-20 bg-ternary">
-      <Wrapper>
-        <div className="flex items-center flex-wrap">
+      <div className="flex items-center flex-wrap relative">
+        <Wrapper>
+          {/* Left Content Section */}
           <div className="md:w-[50%] py-12">
             <div className="pb-10">
               <motion.h1
@@ -20,9 +23,9 @@ export default function AboutPage() {
                 whileInView={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: 50 }}
                 transition={{ duration: 0.5, ease: "easeOut" }}
-                className="text-3xl md:text-4xl lg:text-6xl font-semibold text-secondary"
+                className="text-3xl md:text-4xl lg:text-5xl font-semibold text-secondary"
               >
-                About
+                ABOUT
               </motion.h1>
               <motion.div
                 initial={{ opacity: 0, y: 50 }}
@@ -37,7 +40,7 @@ export default function AboutPage() {
               whileInView={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: 50 }}
               transition={{ duration: 0.5, ease: "easeOut" }}
-              className="md:w-[90%] text-black/80 text-lg font-thin "
+              className="md:w-[80%] text-black/80 text-lg font-thin"
             >
               I&apos;m a paragraph. Click here to add your own text and edit me.
               It&apos;s easy. Just click “Edit Text” or double click me to add
@@ -53,24 +56,24 @@ export default function AboutPage() {
               show your visitors who you are.
             </motion.p>
           </div>
-          <motion.div
-            className="w-full md:w-[50%] h-[590px] relative"
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: 50 }}
-            transition={{ duration: 0.5, ease: "easeOut" }}
-          >
-            <Image
-              src="/assets/about-us/About-image.avif"
-              alt="About image"
-              layout="fill"
-              objectFit="cover"
-              className="rounded-sm"
-            />
-          </motion.div>
-        </div>
-      </Wrapper>
-      <motion.div />
+        </Wrapper>
+        {/* Right Image Section */}
+        <motion.div
+          className="relative w-full h-[400px] md:absolute md:right-0 md:top-0 md:w-[50%] md:h-[100%]"
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: 50 }}
+          transition={{ duration: 0.5, ease: "easeOut" }}
+        >
+          <Image
+            src="/assets/about-us/About-image.avif"
+            alt="About image"
+            layout="fill"
+            objectFit="cover"
+            className="rounded-sm"
+          />
+        </motion.div>
+      </div>
     </Element>
   );
 }

@@ -28,7 +28,7 @@ const Clients = [
 
 export default function ClientsPage() {
   return (
-    <div>
+    <div className="mt-20">
       <Wrapper>
         <div className="text-center pb-12">
           <motion.h1

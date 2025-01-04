@@ -1,5 +1,6 @@
 "use client";
 
+// ** React Scroll
 import { Element } from "react-scroll";
 
 // ** Motion
@@ -27,7 +28,13 @@ export default function ContactPage() {
         ></motion.div>
       </div>
 
-      <form className=" px-4 mx-auto max-w-5xl sm:px-6 lg:px-8 bg-white shadow-md rounded-sm p-5">
+      <motion.form
+        initial={{ opacity: 0, y: 70 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        exit={{ opacity: 0, y: 70 }}
+        transition={{ duration: 0.5, ease: "easeOut" }}
+        className=" px-4 mx-auto max-w-5xl sm:px-6 lg:px-8 bg-white shadow-md rounded-sm p-5"
+      >
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
           {/* Full Name */}
           <div>
@@ -128,9 +135,15 @@ export default function ContactPage() {
             Submit
           </button>
         </div>
-      </form>
+      </motion.form>
 
-      <div className=" px-4 mx-auto max-w-7xl sm:px-6 lg:px-8 relative pb-20 pt-16">
+      <motion.div
+        initial={{ opacity: 0, y: 70 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        exit={{ opacity: 0, y: 70 }}
+        transition={{ duration: 0.5, ease: "easeOut" }}
+        className=" px-4 mx-auto max-w-7xl sm:px-6 lg:px-8 relative pb-20 pt-16"
+      >
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.0858476817564!2d-122.41941668468195!3d37.77492927975926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808dfd3eaf03%3A0x738f3e9bc3c0a9aa!2sCivic%20Center%2C%20San%20Francisco%2C%20CA!5e0!3m2!1sen!2sus!4v1697643930973!5m2!1sen!2sus"
           width="100%"
@@ -139,7 +152,7 @@ export default function ContactPage() {
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
         ></iframe>
-      </div>
+      </motion.div>
     </Element>
   );
 }
