@@ -20,7 +20,7 @@ export default function OurWork() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-y-12 gap-x-6 justify-items-center items-center text-center">
             {/* First Stat */}
             <div className="flex flex-col items-center">
-              <p className="text-secondary text-5xl font-bold">2035</p>
+              <p className="text-secondary text-5xl font-bold">2010</p>
               <p className="mt-2 text-secondary text-base">Year Established</p>
             </div>
 
